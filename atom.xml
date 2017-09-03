@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2017-09-02T14:13:42.610Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://lywoniu.com/"/>
+  <updated>2017-09-03T03:40:07.606Z</updated>
+  <id>http://lywoniu.com/</id>
   
   <author>
     <name>蜗牛99</name>
@@ -16,20 +16,55 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>chapter 7 确保Web安全的HTTPS</title>
+    <link href="http://lywoniu.com/2017/09/03/http08/"/>
+    <id>http://lywoniu.com/2017/09/03/http08/</id>
+    <published>2017-09-03T03:34:29.000Z</published>
+    <updated>2017-09-03T03:40:07.606Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-HTTP的缺点"><a href="#1-HTTP的缺点" class="headerlink" title="1. HTTP的缺点"></a>1. HTTP的缺点</h2><ul>
+<li>通信使用明文（不加密），内容可能会被窃听</li>
+<li>不验证通信方的身份，因此有可能遭遇伪装</li>
+<li>无法证明报文的完整性，所以有可能已遭篡改<h2 id="2-HTTP-加密-认证-完整性保护-HTTPS"><a href="#2-HTTP-加密-认证-完整性保护-HTTPS" class="headerlink" title="2. HTTP+加密+认证+完整性保护=HTTPS"></a>2. HTTP+加密+认证+完整性保护=HTTPS</h2></li>
+<li>http协议中没有加密机制，在HTTP通信接口部分用SSL(Secure Layer)和TSL(Transport Layer Security)协议。</li>
+<li>通常，HTTP直接和TCP通信。当使用SSL时，则演变成先和SSL通信，再由SSL和TCP通信。简言之，HTTPS就是身披SSL外壳的HTTP。<br>-HTTP采用共享密钥加密（加密时发送密钥给对方）和公开密钥加密（公有密钥和私有密钥）两者并用的混合加密机制。</li>
+<li>公开密钥无法证明公开密钥本身就是货真价实的公开密钥。所有使用数字证书认证机构（CA,Certificate Authority）和其他机构颁发的公开密钥证书来证明公开密钥的正确性。</li>
+<li><strong>SSL的缺点</strong></li>
+<li>和使用HTTP相比，网络负载可能会变慢2到100倍。除去和TCP连接、发送HTTP请求·响应以外，还必须进行SSL通信，使得通信量增加。</li>
+<li>SSL必须进行加密处理，在服务器和客户端都需要进行加密和解密的运算操作，比起HTTP会更多地消耗服务器和客户端的硬件资源，导致负载增强。<br>-所以，不必都是用HTTPS通信，只有在包含个人信息等敏感数据时，才利用HTTPS加密通信。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-HTTP的缺点&quot;&gt;&lt;a href=&quot;#1-HTTP的缺点&quot; class=&quot;headerlink&quot; title=&quot;1. HTTP的缺点&quot;&gt;&lt;/a&gt;1. HTTP的缺点&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;通信使用明文（不加密），内容可能会被窃听&lt;/li&gt;
+&lt;li&gt;不验证通
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2017/09/02/hello-world/"/>
-    <id>http://yoursite.com/2017/09/02/hello-world/</id>
+    <link href="http://lywoniu.com/2017/09/02/hello-world/"/>
+    <id>http://lywoniu.com/2017/09/02/hello-world/</id>
     <published>2017-09-02T14:13:42.610Z</published>
     <updated>2017-09-02T14:13:42.610Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+</code></pre>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 ]]></content>
     

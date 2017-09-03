@@ -23,7 +23,7 @@
     <meta name="description" content="Stay Hungry. Stay Foolish.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Snail99 Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://lywoniu.com/index.html">
 <meta property="og:site_name" content="Snail99 Blog">
 <meta property="og:description" content="Stay Hungry. Stay Foolish.">
 <meta name="twitter:card" content="summary">
@@ -38,7 +38,10 @@
 
     <!-- custom head -->
     
-
+    <!-- highlight.js代码高亮主题 css 引入-->
+  <link rel="stylesheet" href="<link rel="stylesheet"
+  href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/obsidian.min.css">
+  <!-- highlight.js代码高亮主题 css 引入-->
 </head>
 
 <body>
@@ -163,6 +166,50 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
+            <article id="post-http08"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-09-03 11:34:29" datetime="2017-09-03T03:34:29.000Z"  itemprop="datePublished">2017-09-03</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/09/03/http08/">chapter 7 确保Web安全的HTTPS</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        1. HTTP的缺点
+通信使用明文（不加密），内容可能会被窃听
+不验证通信方的身份，因此有可能遭遇伪装
+无法证明报文的完整性，所以有可能已遭篡改2. HTTP+加密+认证+完整性保护=HTTPS
+http协议中没有加密机制，在HTTP通信接口部分用SSL(Secure Layer)和TSL(Transport Layer Security)协议。
+通常，HTTP直接和TCP通信。当使用SSL...
+    
+
+        <a href="/2017/09/03/http08/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
             <article id="post-hello-world"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -247,7 +294,7 @@ Qu...
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/&title=Snail99 Blog&pic=http://yoursite.com/img/avatar.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://lywoniu.com/&title=Snail99 Blog&pic=http://lywoniu.com/img/avatar.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -257,22 +304,22 @@ Qu...
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/&title=Snail99 Blog&source=Stay Hungry. Stay Foolish." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://lywoniu.com/&title=Snail99 Blog&source=Stay Hungry. Stay Foolish." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://lywoniu.com/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Snail99 Blog&url=http://yoursite.com/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Snail99 Blog&url=http://lywoniu.com/&via=http://lywoniu.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://lywoniu.com/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -283,7 +330,7 @@ Qu...
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAAAAAAZai4+AAABW0lEQVR42u3aQQ7DIAxE0dz/0qnUVaUUMjNOF7W/VxVKw8sCMIbjkON8x6r9M/T/PhCwYDVindu4PqO0XNv1vmDBmszaD2y9S/33jQEWLFjC6/QFGBYsWL9muV3CggVrz1KSZmWy0JPvx3J5WLBasCrLbSVRfri+BQvW37JOM9xlOwtYsKax9CLRfhRXtrhGBgELVlPWSpptSvVk+qYvWLBgRUWiynWEL++BBQuW0KUy1BXWsgUWrGEsN2nOQNJRij67wILVlKUUZCvLuVJsks5gYcFqyqqUbt0jE2PqgQVrMMu9fJAdcCqTCCxY01jZQUi2uS2d/MCC1ZpVuXCQlWul1BwWrGGsLOXdd6kv5PVEHBasTqxsUtDTZXcqgQVrMisr/WTbVOkZWLBgyYPcPcMxMgVYsGA9tL1Uik3Lz4AFayQrS5rd1NmYE2DBGsbKrgtkxFI1CxasnqwXXY7FbVPN83MAAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAAAAAAZai4+AAABVElEQVR42u3aQQ7DMAhEUd//0qnUVaXK9sCQhc33Kkqj5m0CGDOGvJ7v+r2erdkz440FC9ZFLP01/887v27osGC1ZClBYfb87M6auDHAggVL+OydNA8LFiw/QChQPbjAggUrtx2Nol+v5WHBuoLlpNvo9ev9LViwDmQ99nKav9P/hAWrGatqa6qXxYHAAQtWS1bu4MRvIU03sbBgtWHNXrO+H71egwJJGhasS1l6YzeXgAsaRrBgNWA5f6EHl3BLFxasZqz10YhfRjsHNrBgdWMld71FxzCj9pWwYB3LiqZSZbwgGlY2oQEWrGYs/VP3d8zrEgEWrD4sf7wgN8mzCROwYDVjVcWYaJKuGneABesmll8o68cz4f4WLFjNWLnBHSeFSwECFixYxsevI5JDP7BgNWY5m89NNwsWLFhy0ezchwULll3ZhkfPlaPQ4v4WLFinsj5Tve42byAIkAAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 
@@ -344,6 +391,11 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 })();
 </script>
 
+
+
+ <!-- highlight.js代码高亮主题 script 引入-->
+ <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+ <!-- highlight.js代码高亮主题 script 引入-->
 
 
 </body>
