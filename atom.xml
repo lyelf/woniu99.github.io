@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lywoniu.com/"/>
-  <updated>2017-09-03T05:27:50.136Z</updated>
+  <updated>2017-09-03T06:12:15.655Z</updated>
   <id>http://lywoniu.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://lywoniu.com/2017/09/03/http08/"/>
     <id>http://lywoniu.com/2017/09/03/http08/</id>
     <published>2017-09-03T03:34:29.000Z</published>
-    <updated>2017-09-03T05:27:50.136Z</updated>
+    <updated>2017-09-03T06:12:15.655Z</updated>
     
     <content type="html"><![CDATA[<h2 id="1-HTTP的缺点"><a href="#1-HTTP的缺点" class="headerlink" title="1. HTTP的缺点"></a>1. HTTP的缺点</h2><ul>
 <li>通信使用明文（不加密），内容可能会被窃听</li>
@@ -29,6 +29,9 @@
 <li>http协议中没有加密机制，在HTTP通信接口部分用SSL(Secure Layer)和TSL(Transport Layer Security)协议。</li>
 <li>通常，HTTP直接和TCP通信。当使用SSL时，则演变成先和SSL通信，再由SSL和TCP通信。简言之，HTTPS就是身披SSL外壳的HTTP。<br>-HTTP采用共享密钥加密（加密时发送密钥给对方）和公开密钥加密（公有密钥和私有密钥）两者并用的混合加密机制。</li>
 <li>公开密钥无法证明公开密钥本身就是货真价实的公开密钥。所有使用数字证书认证机构（CA,Certificate Authority）和其他机构颁发的公开密钥证书来证明公开密钥的正确性。<pre><code class="java"> int a = 1;
+ for(a;a&lt;10;a++) {
+     a++;
+ }
 </code></pre>
 </li>
 <li><strong>SSL的缺点</strong></li>
