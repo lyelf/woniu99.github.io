@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Snail99 Blog</title>
-  
+  <subtitle>Stay Hungry. Stay Foolish.</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lywoniu.com/"/>
-  <updated>2017-09-02T14:13:42.610Z</updated>
+  <updated>2017-09-03T15:45:49.986Z</updated>
   <id>http://lywoniu.com/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://lywoniu.com/2017/09/02/hello-world/"/>
     <id>http://lywoniu.com/2017/09/02/hello-world/</id>
     <published>2017-09-02T14:13:42.610Z</published>
-    <updated>2017-09-02T14:13:42.610Z</updated>
+    <updated>2017-09-03T15:45:49.986Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.<br><a id="more"></a></p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
 </code></pre>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
@@ -39,7 +39,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;br&gt;
     
     </summary>
     
@@ -51,11 +51,12 @@
     <link href="http://lywoniu.com/2017/08/22/http10/"/>
     <id>http://lywoniu.com/2017/08/22/http10/</id>
     <published>2017-08-22T12:28:31.000Z</published>
-    <updated>2017-09-03T12:35:15.663Z</updated>
+    <updated>2017-09-03T14:43:15.793Z</updated>
     
     <content type="html"><![CDATA[<h2 id="1-针对Web应用的攻击模式"><a href="#1-针对Web应用的攻击模式" class="headerlink" title="1 针对Web应用的攻击模式"></a>1 针对Web应用的攻击模式</h2><h3 id="1-1-以服务器为目标的主动攻击"><a href="#1-1-以服务器为目标的主动攻击" class="headerlink" title="1.1 以服务器为目标的主动攻击"></a>1.1 以服务器为目标的主动攻击</h3><ul>
 <li>主动攻击(active attack)是指攻击者通过直接访问Web应用，把攻击代码传入的攻击模式。由于该模式是直接针对服务器上的资源进行的攻击，因此攻击者需要能够访问到那些资源。</li>
-<li>主动攻击主要有SQL注入攻击和OS命令注入攻击。<h3 id="1-2-以服务器为目标的被动攻击"><a href="#1-2-以服务器为目标的被动攻击" class="headerlink" title="1.2 以服务器为目标的被动攻击"></a>1.2 以服务器为目标的被动攻击</h3></li>
+<li>主动攻击主要有SQL注入攻击和OS命令注入攻击。<a id="more"></a>
+<h3 id="1-2-以服务器为目标的被动攻击"><a href="#1-2-以服务器为目标的被动攻击" class="headerlink" title="1.2 以服务器为目标的被动攻击"></a>1.2 以服务器为目标的被动攻击</h3></li>
 <li>被动攻击（passive attack）是指利用圈套策略执行攻击带码的攻击模式。在被动攻击过程中，攻击者不直接对目标Web应用访问发起攻击。</li>
 <li>被动攻击的攻击模式如下：<ul>
 <li><ol>
@@ -103,7 +104,9 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;1-针对Web应用的攻击模式&quot;&gt;&lt;a href=&quot;#1-针对Web应用的攻击模式&quot; class=&quot;headerlink&quot; title=&quot;1 针对Web应用的攻击模式&quot;&gt;&lt;/a&gt;1 针对Web应用的攻击模式&lt;/h2&gt;&lt;h3 id=&quot;1-1-以服务器为目标的主动攻击&quot;
+      &lt;h2 id=&quot;1-针对Web应用的攻击模式&quot;&gt;&lt;a href=&quot;#1-针对Web应用的攻击模式&quot; class=&quot;headerlink&quot; title=&quot;1 针对Web应用的攻击模式&quot;&gt;&lt;/a&gt;1 针对Web应用的攻击模式&lt;/h2&gt;&lt;h3 id=&quot;1-1-以服务器为目标的主动攻击&quot;&gt;&lt;a href=&quot;#1-1-以服务器为目标的主动攻击&quot; class=&quot;headerlink&quot; title=&quot;1.1 以服务器为目标的主动攻击&quot;&gt;&lt;/a&gt;1.1 以服务器为目标的主动攻击&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;主动攻击(active attack)是指攻击者通过直接访问Web应用，把攻击代码传入的攻击模式。由于该模式是直接针对服务器上的资源进行的攻击，因此攻击者需要能够访问到那些资源。&lt;/li&gt;
+&lt;li&gt;主动攻击主要有SQL注入攻击和OS命令注入攻击。
     
     </summary>
     
@@ -119,11 +122,12 @@
     <link href="http://lywoniu.com/2017/08/20/http08-1/"/>
     <id>http://lywoniu.com/2017/08/20/http08-1/</id>
     <published>2017-08-20T06:42:17.000Z</published>
-    <updated>2017-09-03T12:37:47.087Z</updated>
+    <updated>2017-09-03T14:43:37.988Z</updated>
     
     <content type="html"><![CDATA[<h1 id="1-HTTP使用的认证方式："><a href="#1-HTTP使用的认证方式：" class="headerlink" title="1.HTTP使用的认证方式："></a>1.HTTP使用的认证方式：</h1><h2 id="1-1-BASIC认证（基本认证）"><a href="#1-1-BASIC认证（基本认证）" class="headerlink" title="1.1 BASIC认证（基本认证）"></a>1.1 BASIC认证（基本认证）</h2><ul>
 <li>BASIC认证是Web服务器与通信客户端之间进行的认证方式，采用Base64编码方式，但不作加密处理。<h2 id="1-2-DIGEST-摘要认证"><a href="#1-2-DIGEST-摘要认证" class="headerlink" title="1.2 DIGEST(摘要认证)"></a>1.2 DIGEST(摘要认证)</h2></li>
-<li>DIGEST认证使用质询/响应的方式（challenges/response），但不会像BISIC认证那样直接发送明文密码。质询响应方式是指，一开始一方会先发送认证要求给另一方，接着使用从另一方那接收的质询码计算生成响应码。最后将响应码返回给对方进行认证的方式。<h2 id="1-3-SSL客户端认证"><a href="#1-3-SSL客户端认证" class="headerlink" title="1.3 SSL客户端认证"></a>1.3 SSL客户端认证</h2></li>
+<li>DIGEST认证使用质询/响应的方式（challenges/response），但不会像BISIC认证那样直接发送明文密码。质询响应方式是指，一开始一方会先发送认证要求给另一方，接着使用从另一方那接收的质询码计算生成响应码。最后将响应码返回给对方进行认证的方式。<a id="more"></a>
+<h2 id="1-3-SSL客户端认证"><a href="#1-3-SSL客户端认证" class="headerlink" title="1.3 SSL客户端认证"></a>1.3 SSL客户端认证</h2></li>
 <li>SSL客户端认证的认证步骤：<br>  为达到SSL客户端认证的目的，需要事先将客户端证书分发给客户端，且客户端必须安装此证书。</li>
 </ul>
 <ol>
@@ -146,7 +150,9 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;1-HTTP使用的认证方式：&quot;&gt;&lt;a href=&quot;#1-HTTP使用的认证方式：&quot; class=&quot;headerlink&quot; title=&quot;1.HTTP使用的认证方式：&quot;&gt;&lt;/a&gt;1.HTTP使用的认证方式：&lt;/h1&gt;&lt;h2 id=&quot;1-1-BASIC认证（基本认证）
+      &lt;h1 id=&quot;1-HTTP使用的认证方式：&quot;&gt;&lt;a href=&quot;#1-HTTP使用的认证方式：&quot; class=&quot;headerlink&quot; title=&quot;1.HTTP使用的认证方式：&quot;&gt;&lt;/a&gt;1.HTTP使用的认证方式：&lt;/h1&gt;&lt;h2 id=&quot;1-1-BASIC认证（基本认证）&quot;&gt;&lt;a href=&quot;#1-1-BASIC认证（基本认证）&quot; class=&quot;headerlink&quot; title=&quot;1.1 BASIC认证（基本认证）&quot;&gt;&lt;/a&gt;1.1 BASIC认证（基本认证）&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;BASIC认证是Web服务器与通信客户端之间进行的认证方式，采用Base64编码方式，但不作加密处理。&lt;h2 id=&quot;1-2-DIGEST-摘要认证&quot;&gt;&lt;a href=&quot;#1-2-DIGEST-摘要认证&quot; class=&quot;headerlink&quot; title=&quot;1.2 DIGEST(摘要认证)&quot;&gt;&lt;/a&gt;1.2 DIGEST(摘要认证)&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;DIGEST认证使用质询/响应的方式（challenges/response），但不会像BISIC认证那样直接发送明文密码。质询响应方式是指，一开始一方会先发送认证要求给另一方，接着使用从另一方那接收的质询码计算生成响应码。最后将响应码返回给对方进行认证的方式。
     
     </summary>
     
@@ -160,12 +166,13 @@
     <link href="http://lywoniu.com/2017/08/19/http08/"/>
     <id>http://lywoniu.com/2017/08/19/http08/</id>
     <published>2017-08-19T03:34:29.000Z</published>
-    <updated>2017-09-03T12:38:01.038Z</updated>
+    <updated>2017-09-03T14:43:23.009Z</updated>
     
     <content type="html"><![CDATA[<h1 id="1-HTTP的缺点"><a href="#1-HTTP的缺点" class="headerlink" title="1. HTTP的缺点"></a>1. HTTP的缺点</h1><ul>
 <li>通信使用明文（不加密），内容可能会被窃听</li>
 <li>不验证通信方的身份，因此有可能遭遇伪装</li>
-<li>无法证明报文的完整性，所以有可能已遭篡改<h1 id="2-HTTP-加密-认证-完整性保护-HTTPS"><a href="#2-HTTP-加密-认证-完整性保护-HTTPS" class="headerlink" title="2. HTTP+加密+认证+完整性保护=HTTPS"></a>2. HTTP+加密+认证+完整性保护=HTTPS</h1></li>
+<li>无法证明报文的完整性，所以有可能已遭篡改<a id="more"></a>
+<h1 id="2-HTTP-加密-认证-完整性保护-HTTPS"><a href="#2-HTTP-加密-认证-完整性保护-HTTPS" class="headerlink" title="2. HTTP+加密+认证+完整性保护=HTTPS"></a>2. HTTP+加密+认证+完整性保护=HTTPS</h1></li>
 <li>http协议中没有加密机制，在HTTP通信接口部分用SSL(Secure Layer)和TSL(Transport Layer Security)协议。</li>
 <li>通常，HTTP直接和TCP通信。当使用SSL时，则演变成先和SSL通信，再由SSL和TCP通信。简言之，HTTPS就是身披SSL外壳的HTTP。<br>-HTTP采用共享密钥加密（加密时发送密钥给对方）和公开密钥加密（公有密钥和私有密钥）两者并用的混合加密机制。</li>
 <li>公开密钥无法证明公开密钥本身就是货真价实的公开密钥。所有使用数字证书认证机构（CA,Certificate Authority）和其他机构颁发的公开密钥证书来证明公开密钥的正确性。</li>
@@ -179,7 +186,8 @@
     
       &lt;h1 id=&quot;1-HTTP的缺点&quot;&gt;&lt;a href=&quot;#1-HTTP的缺点&quot; class=&quot;headerlink&quot; title=&quot;1. HTTP的缺点&quot;&gt;&lt;/a&gt;1. HTTP的缺点&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;通信使用明文（不加密），内容可能会被窃听&lt;/li&gt;
-&lt;li&gt;不验证通
+&lt;li&gt;不验证通信方的身份，因此有可能遭遇伪装&lt;/li&gt;
+&lt;li&gt;无法证明报文的完整性，所以有可能已遭篡改
     
     </summary>
     

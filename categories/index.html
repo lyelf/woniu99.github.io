@@ -7,6 +7,11 @@
     
 
     
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?5107ebbf4dfd9a43a94eefa34f0a1335"></script>
+<!-- End Baidu Tongji -->
+
 
 
 
@@ -14,10 +19,10 @@
     
     
     
-    <title>文章分类 | Snail99 Blog</title>
+    <title>文章分类 | Snail99 Blog | Stay Hungry. Stay Foolish.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="theme-color" content="#3F51B5">
+    <meta name="theme-color" content="#00b0f0">
     
     
     <meta name="keywords" content="">
@@ -39,7 +44,18 @@
     <script>window.lazyScripts=[]</script>
     <!-- custom head -->
     
-   
+   <!-- 百度统计 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?5107ebbf4dfd9a43a94eefa34f0a1335";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+        
+
     .....省略代码.......
     <!--prettify代码高亮主题css引入-->
     <script src="/plugins/jquery-2.2.4.min.js"></script>
@@ -79,21 +95,21 @@
             <li class="waves-block waves-effect">
               <a href="/archives"  >
                 <i class="icon icon-lg icon-archives"></i>
-                Archives
+                归档
               </a>
             </li>
         
             <li class="waves-block waves-effect">
               <a href="/tags"  >
                 <i class="icon icon-lg icon-tags"></i>
-                Tags
+                标签
               </a>
             </li>
         
             <li class="waves-block waves-effect active">
               <a href="/categories"  >
                 <i class="icon icon-lg icon-th-list"></i>
-                Categories
+                分类
               </a>
             </li>
         
@@ -170,64 +186,6 @@
         </div>
 
         
-        <div class="card page-about-me flex-row">
-            <a href="/" class="avatar waves-effect waves-circle waves-light"><img src="/img/avatar.png"></a>
-            <div class="content flex-col">
-                <p><strong>蜗牛99</strong></p>
-                <p><em></em></p>
-                <p>用户页面中作者相关的描述性文字，如不需要设为 false</p>
-            </div>
-
-            
-<div class="page-share-wrap">
-    
-
-<div class="page-share" id="pageShare">
-    <ul class="reset share-icons">
-      <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://lywoniu.com/categories/&title=《文章分类》 — Snail99 Blog&pic=http://lywoniu.com/img/avatar.png" data-title="微博">
-          <i class="icon icon-weibo"></i>
-        </a>
-      </li>
-      <li>
-        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
-          <i class="icon icon-weixin"></i>
-        </a>
-      </li>
-      <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://lywoniu.com/categories/&title=《文章分类》 — Snail99 Blog&source=Stay Hungry. Stay Foolish." data-title=" QQ">
-          <i class="icon icon-qq"></i>
-        </a>
-      </li>
-      <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://lywoniu.com/categories/" data-title=" Facebook">
-          <i class="icon icon-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《文章分类》 — Snail99 Blog&url=http://lywoniu.com/categories/&via=http://lywoniu.com" data-title=" Twitter">
-          <i class="icon icon-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://lywoniu.com/categories/" data-title=" Google+">
-          <i class="icon icon-google-plus"></i>
-        </a>
-      </li>
-    </ul>
- </div>
-
-
-
-    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
-        <i class="icon icon-share-alt icon-lg"></i>
-    </a>
-</div>
-
-
-
-        </div>
-        
 
         
 <div class="page-reward">
@@ -264,7 +222,7 @@
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <h3 class="reward-title">
         <i class="icon icon-quote-left"></i>
-        谢谢大爷~
+        添加微信~
         <i class="icon icon-quote-right"></i>
     </h3>
     <div class="reward-content">
@@ -272,16 +230,6 @@
         <div class="reward-code">
             <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
         </div>
-        
-        <label class="reward-toggle">
-            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
-                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
-            <div class="reward-toggle-ctrol">
-                <span class="reward-toggle-item wechat">微信</span>
-                <span class="reward-toggle-label"></span>
-                <span class="reward-toggle-item alipay">支付宝</span>
-            </div>
-        </label>
         
     </div>
 </div>
@@ -423,10 +371,10 @@ var BLOG = { ROOT: '/', SHARE: 'true', REWARD: 'true' };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = '死鬼去哪里了！';
+            document.title = 'don't let me alone!';
             clearTimeout(titleTime);
         } else {
-            document.title = '(つェ⊂)咦!又好了!';
+            document.title = 'welcome back!';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);
