@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lywoniu.com/"/>
-  <updated>2017-09-03T06:12:15.655Z</updated>
+  <updated>2017-09-02T14:13:42.610Z</updated>
   <id>http://lywoniu.com/</id>
   
   <author>
@@ -14,42 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>chapter 7 确保Web安全的HTTPS</title>
-    <link href="http://lywoniu.com/2017/09/03/http08/"/>
-    <id>http://lywoniu.com/2017/09/03/http08/</id>
-    <published>2017-09-03T03:34:29.000Z</published>
-    <updated>2017-09-03T06:12:15.655Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="1-HTTP的缺点"><a href="#1-HTTP的缺点" class="headerlink" title="1. HTTP的缺点"></a>1. HTTP的缺点</h2><ul>
-<li>通信使用明文（不加密），内容可能会被窃听</li>
-<li>不验证通信方的身份，因此有可能遭遇伪装</li>
-<li>无法证明报文的完整性，所以有可能已遭篡改<h2 id="2-HTTP-加密-认证-完整性保护-HTTPS"><a href="#2-HTTP-加密-认证-完整性保护-HTTPS" class="headerlink" title="2. HTTP+加密+认证+完整性保护=HTTPS"></a>2. HTTP+加密+认证+完整性保护=HTTPS</h2></li>
-<li>http协议中没有加密机制，在HTTP通信接口部分用SSL(Secure Layer)和TSL(Transport Layer Security)协议。</li>
-<li>通常，HTTP直接和TCP通信。当使用SSL时，则演变成先和SSL通信，再由SSL和TCP通信。简言之，HTTPS就是身披SSL外壳的HTTP。<br>-HTTP采用共享密钥加密（加密时发送密钥给对方）和公开密钥加密（公有密钥和私有密钥）两者并用的混合加密机制。</li>
-<li>公开密钥无法证明公开密钥本身就是货真价实的公开密钥。所有使用数字证书认证机构（CA,Certificate Authority）和其他机构颁发的公开密钥证书来证明公开密钥的正确性。<pre><code class="java"> int a = 1;
- for(a;a&lt;10;a++) {
-     a++;
- }
-</code></pre>
-</li>
-<li><strong>SSL的缺点</strong></li>
-<li>和使用HTTP相比，网络负载可能会变慢2到100倍。除去和TCP连接、发送HTTP请求·响应以外，还必须进行SSL通信，使得通信量增加。</li>
-<li>SSL必须进行加密处理，在服务器和客户端都需要进行加密和解密的运算操作，比起HTTP会更多地消耗服务器和客户端的硬件资源，导致负载增强。<br>-所以，不必都是用HTTPS通信，只有在包含个人信息等敏感数据时，才利用HTTPS加密通信。</li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;1-HTTP的缺点&quot;&gt;&lt;a href=&quot;#1-HTTP的缺点&quot; class=&quot;headerlink&quot; title=&quot;1. HTTP的缺点&quot;&gt;&lt;/a&gt;1. HTTP的缺点&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;通信使用明文（不加密），内容可能会被窃听&lt;/li&gt;
-&lt;li&gt;不验证通
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -83,11 +47,79 @@
   </entry>
   
   <entry>
-    <title>chapter 8 确认访问用户身份的认证</title>
-    <link href="http://lywoniu.com/2017/08/05/http08-1/"/>
-    <id>http://lywoniu.com/2017/08/05/http08-1/</id>
-    <published>2017-08-05T06:42:17.000Z</published>
-    <updated>2017-09-03T06:44:48.742Z</updated>
+    <title>《图解http》笔记--10-Web的攻击技术</title>
+    <link href="http://lywoniu.com/2017/08/22/http10/"/>
+    <id>http://lywoniu.com/2017/08/22/http10/</id>
+    <published>2017-08-22T12:28:31.000Z</published>
+    <updated>2017-09-03T12:35:15.663Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-针对Web应用的攻击模式"><a href="#1-针对Web应用的攻击模式" class="headerlink" title="1 针对Web应用的攻击模式"></a>1 针对Web应用的攻击模式</h2><h3 id="1-1-以服务器为目标的主动攻击"><a href="#1-1-以服务器为目标的主动攻击" class="headerlink" title="1.1 以服务器为目标的主动攻击"></a>1.1 以服务器为目标的主动攻击</h3><ul>
+<li>主动攻击(active attack)是指攻击者通过直接访问Web应用，把攻击代码传入的攻击模式。由于该模式是直接针对服务器上的资源进行的攻击，因此攻击者需要能够访问到那些资源。</li>
+<li>主动攻击主要有SQL注入攻击和OS命令注入攻击。<h3 id="1-2-以服务器为目标的被动攻击"><a href="#1-2-以服务器为目标的被动攻击" class="headerlink" title="1.2 以服务器为目标的被动攻击"></a>1.2 以服务器为目标的被动攻击</h3></li>
+<li>被动攻击（passive attack）是指利用圈套策略执行攻击带码的攻击模式。在被动攻击过程中，攻击者不直接对目标Web应用访问发起攻击。</li>
+<li>被动攻击的攻击模式如下：<ul>
+<li><ol>
+<li>攻击者诱使用户触发已设置好的陷阱，而陷阱会启动发送已嵌入攻击代码的HTTP请求。</li>
+</ol>
+</li>
+<li><ol>
+<li>当用户不知不觉中招之后，用户的浏览器或邮件客户端就会触发这个陷阱。</li>
+</ol>
+</li>
+<li><ol>
+<li>中招之后的用户浏览器会把含有攻击代码的HTTP请求发送给作为攻击目标的Web应用，运行攻击代码。</li>
+</ol>
+</li>
+<li><ol>
+<li>执行完攻击代码，存在安全漏洞的Web应用会成为攻击者的跳板，可能导致用户所持的Cookie等个人信息被窃取，登录状态中的用户权限遭恶意滥用等后果。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>被动攻击中具有代表性的攻击是跨站脚本攻击和跨站点请求伪造。<h2 id="2-因输出值转义不完全引发的安全漏洞"><a href="#2-因输出值转义不完全引发的安全漏洞" class="headerlink" title="2. 因输出值转义不完全引发的安全漏洞"></a>2. 因输出值转义不完全引发的安全漏洞</h2><h3 id="2-1-跨站脚本攻击"><a href="#2-1-跨站脚本攻击" class="headerlink" title="2.1 跨站脚本攻击"></a>2.1 跨站脚本攻击</h3></li>
+<li>跨站脚本攻击（Cross-Site Scripting,XSS）是指通过存在安全漏洞的Web网站注册用户的浏览器内运行非法的HTML标签或Javascript进行的一种攻击。动态创建的HTML部分有可能隐藏着安全漏洞。就这样，攻击者编写脚本设下陷阱，用户在自己的浏览器上运行时，一不小心就会受到攻击。</li>
+<li>跨站脚本攻击有可能造成以下影响。<ul>
+<li>利用虚假输入表单骗取用户个人信息。</li>
+<li>利用脚本窃取用户的Cookie值，被害者在不知情的情况下，帮助攻击者发送恶意请求。</li>
+<li>显示伪造的文章或图片。</li>
+</ul>
+</li>
+<li>XSS是攻击者利用预先设置的陷阱触发的被动攻击。<h3 id="2-2-SQL注入攻击"><a href="#2-2-SQL注入攻击" class="headerlink" title="2.2 SQL注入攻击"></a>2.2 SQL注入攻击</h3>-SQL注入(SQL Injection)是指针对Web应用使用的数据库，通过运行非法的SQL而产生的攻击。</li>
+<li>SQL注入攻击有以下影响：<ul>
+<li>非法查看或篡改数据库内的数据。</li>
+<li>规避认证</li>
+<li>执行和数据库服务器业务关联的程序等。<h3 id="2-3-OS命令注入攻击"><a href="#2-3-OS命令注入攻击" class="headerlink" title="2.3 OS命令注入攻击"></a>2.3 OS命令注入攻击</h3></li>
+</ul>
+</li>
+<li>OS命令注入攻击（OS Command Injection）是指通过Web应用，执行非法的操作系统命令达到攻击的目的。只要在能调用Shell函数的地方就存在被攻击的风险。</li>
+<li>OS命令注入攻击可以向Shell发送命令，让Windows或Linux操作系统的命令行启动程序。也就是说，通过OS注入攻击可执行OS上安装的各种程序。<h3 id="2-4-DoS攻击"><a href="#2-4-DoS攻击" class="headerlink" title="2.4 DoS攻击"></a>2.4 DoS攻击</h3></li>
+<li>DoS攻击是一种让运行中的服务呈停止状态的攻击。有时也叫做服务停止攻击或拒绝服务攻击。DoS攻击的对象不仅限于Web网站，还包括网络设备及服务器等。</li>
+<li>主要有以下两种DoS攻击方式：<ul>
+<li>集中利用访问请求造成资源过载，资源用尽的同时，实际上服务也就呈停止状态。<br>通过攻击安全漏洞使服务停止。</li>
+</ul>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-针对Web应用的攻击模式&quot;&gt;&lt;a href=&quot;#1-针对Web应用的攻击模式&quot; class=&quot;headerlink&quot; title=&quot;1 针对Web应用的攻击模式&quot;&gt;&lt;/a&gt;1 针对Web应用的攻击模式&lt;/h2&gt;&lt;h3 id=&quot;1-1-以服务器为目标的主动攻击&quot;
+    
+    </summary>
+    
+    
+      <category term="http" scheme="http://lywoniu.com/tags/http/"/>
+    
+      <category term="web攻击技术" scheme="http://lywoniu.com/tags/web%E6%94%BB%E5%87%BB%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《图解http》笔记--8-确认访问用户身份的认证</title>
+    <link href="http://lywoniu.com/2017/08/20/http08-1/"/>
+    <id>http://lywoniu.com/2017/08/20/http08-1/</id>
+    <published>2017-08-20T06:42:17.000Z</published>
+    <updated>2017-09-03T12:37:47.087Z</updated>
     
     <content type="html"><![CDATA[<h1 id="1-HTTP使用的认证方式："><a href="#1-HTTP使用的认证方式：" class="headerlink" title="1.HTTP使用的认证方式："></a>1.HTTP使用的认证方式：</h1><h2 id="1-1-BASIC认证（基本认证）"><a href="#1-1-BASIC认证（基本认证）" class="headerlink" title="1.1 BASIC认证（基本认证）"></a>1.1 BASIC认证（基本认证）</h2><ul>
 <li>BASIC认证是Web服务器与通信客户端之间进行的认证方式，采用Base64编码方式，但不作加密处理。<h2 id="1-2-DIGEST-摘要认证"><a href="#1-2-DIGEST-摘要认证" class="headerlink" title="1.2 DIGEST(摘要认证)"></a>1.2 DIGEST(摘要认证)</h2></li>
@@ -120,6 +152,41 @@
     
     
       <category term="图解http" scheme="http://lywoniu.com/tags/%E5%9B%BE%E8%A7%A3http/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>《图解HTTP》--笔记-7 确保Web安全的HTTPS</title>
+    <link href="http://lywoniu.com/2017/08/19/http08/"/>
+    <id>http://lywoniu.com/2017/08/19/http08/</id>
+    <published>2017-08-19T03:34:29.000Z</published>
+    <updated>2017-09-03T12:38:01.038Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-HTTP的缺点"><a href="#1-HTTP的缺点" class="headerlink" title="1. HTTP的缺点"></a>1. HTTP的缺点</h1><ul>
+<li>通信使用明文（不加密），内容可能会被窃听</li>
+<li>不验证通信方的身份，因此有可能遭遇伪装</li>
+<li>无法证明报文的完整性，所以有可能已遭篡改<h1 id="2-HTTP-加密-认证-完整性保护-HTTPS"><a href="#2-HTTP-加密-认证-完整性保护-HTTPS" class="headerlink" title="2. HTTP+加密+认证+完整性保护=HTTPS"></a>2. HTTP+加密+认证+完整性保护=HTTPS</h1></li>
+<li>http协议中没有加密机制，在HTTP通信接口部分用SSL(Secure Layer)和TSL(Transport Layer Security)协议。</li>
+<li>通常，HTTP直接和TCP通信。当使用SSL时，则演变成先和SSL通信，再由SSL和TCP通信。简言之，HTTPS就是身披SSL外壳的HTTP。<br>-HTTP采用共享密钥加密（加密时发送密钥给对方）和公开密钥加密（公有密钥和私有密钥）两者并用的混合加密机制。</li>
+<li>公开密钥无法证明公开密钥本身就是货真价实的公开密钥。所有使用数字证书认证机构（CA,Certificate Authority）和其他机构颁发的公开密钥证书来证明公开密钥的正确性。</li>
+<li><strong>SSL的缺点</strong></li>
+<li>和使用HTTP相比，网络负载可能会变慢2到100倍。除去和TCP连接、发送HTTP请求·响应以外，还必须进行SSL通信，使得通信量增加。</li>
+<li>SSL必须进行加密处理，在服务器和客户端都需要进行加密和解密的运算操作，比起HTTP会更多地消耗服务器和客户端的硬件资源，导致负载增强。<br>-所以，不必都是用HTTPS通信，只有在包含个人信息等敏感数据时，才利用HTTPS加密通信。</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;1-HTTP的缺点&quot;&gt;&lt;a href=&quot;#1-HTTP的缺点&quot; class=&quot;headerlink&quot; title=&quot;1. HTTP的缺点&quot;&gt;&lt;/a&gt;1. HTTP的缺点&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;通信使用明文（不加密），内容可能会被窃听&lt;/li&gt;
+&lt;li&gt;不验证通
+    
+    </summary>
+    
+    
+      <category term="http" scheme="http://lywoniu.com/tags/http/"/>
+    
+      <category term="SSL" scheme="http://lywoniu.com/tags/SSL/"/>
     
   </entry>
   

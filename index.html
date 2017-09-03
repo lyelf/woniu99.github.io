@@ -39,10 +39,11 @@
     <!-- custom head -->
     
    
-    
-    <!-- highlight.js代码高亮主题 css 引入-->
-  <link rel="stylesheet" href="/plugins/highlight/styles/dracula.css">
-  <!-- highlight.js代码高亮主题 css 引入-->
+    .....省略代码.......
+    <!--prettify代码高亮主题css引入-->
+    <script src="/plugins/jquery-2.2.4.min.js"></script>
+    <link href="/plugins/prettify/atelier-forest-dark.min.css" rel="stylesheet">
+    .....省略代码.......
 </head>
 
 <body>
@@ -133,7 +134,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -167,50 +168,6 @@
     <ul class="post-list">
     
         <li class="post-list-item fade">
-            <article id="post-http08"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-09-03 11:34:29" datetime="2017-09-03T03:34:29.000Z"  itemprop="datePublished">2017-09-03</time>
-
-        
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/09/03/http08/">chapter 7 确保Web安全的HTTPS</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        1. HTTP的缺点
-通信使用明文（不加密），内容可能会被窃听
-不验证通信方的身份，因此有可能遭遇伪装
-无法证明报文的完整性，所以有可能已遭篡改2. HTTP+加密+认证+完整性保护=HTTPS
-http协议中没有加密机制，在HTTP通信接口部分用SSL(Secure Layer)和TSL(Transport Layer Security)协议。
-通常，HTTP直接和TCP通信。当使用SSL...
-    
-
-        <a href="/2017/09/03/http08/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
             <article id="post-hello-world"
   class="article-card article-type-post" itemprop="blogPost">
 
@@ -242,7 +199,7 @@ Qu...
     
 
         <a href="/2017/09/02/hello-world/" class="post-more waves-effect waves-button">
-            阅读全文…
+            Continue reading...
         </a>
     </div>
     
@@ -251,11 +208,11 @@ Qu...
         </li>
     
         <li class="post-list-item fade">
-            <article id="post-http08-1"
+            <article id="post-http10"
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017-08-05 14:42:17" datetime="2017-08-05T06:42:17.000Z"  itemprop="datePublished">2017-08-05</time>
+        <time class="post-time" title="2017-08-22 20:28:31" datetime="2017-08-22T12:28:31.000Z"  itemprop="datePublished">2017-08-22</time>
 
         
 
@@ -267,7 +224,55 @@ Qu...
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/08/05/http08-1/">chapter 8 确认访问用户身份的认证</a>
+      <a class="post-title-link" href="/2017/08/22/http10/">《图解http》笔记--10-Web的攻击技术</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        1 针对Web应用的攻击模式1.1 以服务器为目标的主动攻击
+主动攻击(active attack)是指攻击者通过直接访问Web应用，把攻击代码传入的攻击模式。由于该模式是直接针对服务器上的资源进行的攻击，因此攻击者需要能够访问到那些资源。
+主动攻击主要有SQL注入攻击和OS命令注入攻击。1.2 以服务器为目标的被动攻击
+被动攻击（passive attack）是指利用圈套策略执行攻击带码的...
+    
+
+        <a href="/2017/08/22/http10/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/http/">http</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web攻击技术/">web攻击技术</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-http08-1"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-08-20 14:42:17" datetime="2017-08-20T06:42:17.000Z"  itemprop="datePublished">2017-08-20</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/08/20/http08-1/">《图解http》笔记--8-确认访问用户身份的认证</a>
     </h3>
   
 
@@ -282,14 +287,64 @@ BASIC认证是Web服务器与通信客户端之间进行的认证方式，采用
 DIGEST认证使用质询/响应的方式（challenges/response），但不会像BISIC认证那样直接发送明文密码。质询响应方式是指，一开始一方会先发送认证要求给另一方，接着使用从另一方...
     
 
-        <a href="/2017/08/05/http08-1/" class="post-more waves-effect waves-button">
-            阅读全文…
+        <a href="/2017/08/20/http08-1/" class="post-more waves-effect waves-button">
+            Continue reading...
         </a>
     </div>
     
     <div class="post-footer">
         
 	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/图解http/">图解http</a></li></ul>
+
+    </div>
+    
+</article>
+
+        </li>
+    
+        <li class="post-list-item fade">
+            <article id="post-http08"
+  class="article-card article-type-post" itemprop="blogPost">
+
+    <div class="post-meta">
+        <time class="post-time" title="2017-08-19 11:34:29" datetime="2017-08-19T03:34:29.000Z"  itemprop="datePublished">2017-08-19</time>
+
+        
+
+
+    </div>
+
+    
+
+
+  
+    <h3 class="post-title" itemprop="name">
+      <a class="post-title-link" href="/2017/08/19/http08/">《图解HTTP》--笔记-7 确保Web安全的HTTPS</a>
+    </h3>
+  
+
+
+
+
+    <div class="post-content" id="post-content" itemprop="postContent">
+
+    
+        1. HTTP的缺点
+通信使用明文（不加密），内容可能会被窃听
+不验证通信方的身份，因此有可能遭遇伪装
+无法证明报文的完整性，所以有可能已遭篡改2. HTTP+加密+认证+完整性保护=HTTPS
+http协议中没有加密机制，在HTTP通信接口部分用SSL(Secure Layer)和TSL(Transport Layer Security)协议。
+通常，HTTP直接和TCP通信。当使用SSL...
+    
+
+        <a href="/2017/08/19/http08/" class="post-more waves-effect waves-button">
+            Continue reading...
+        </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SSL/">SSL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/http/">http</a></li></ul>
 
     </div>
     
@@ -320,7 +375,7 @@ DIGEST认证使用质询/响应的方式（challenges/response），但不会像
             
                 <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
             
-            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
         </p>
     </div>
     <div class="bottom">
@@ -384,11 +439,21 @@ DIGEST认证使用质询/响应的方式（challenges/response），但不会像
 
 
 
+<!--prettify代码高亮脚本引入-->
+
+<script src="/plugins/prettify/prettify.js"></script>
+<script type="text/javascript">
+$(window).load(function(){
+$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+ prettyPrint();
+})
+</script>
+
     <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 <script>
-var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+var BLOG = { ROOT: '/', SHARE: 'true', REWARD: 'false' };
 
-
+//  
 </script>
 
 <script src="/js/main.min.js?v=1.6.13"></script>
@@ -442,10 +507,6 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 
-<!-- highlight.js代码高亮主题 script 引入-->
-<script src="/plugins/highlight/highlight.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<!-- highlight.js代码高亮主题 script 引入-->
 
 </body>
 </html>

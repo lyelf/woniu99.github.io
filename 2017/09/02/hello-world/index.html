@@ -40,10 +40,11 @@
     <!-- custom head -->
     
    
-    
-    <!-- highlight.js代码高亮主题 css 引入-->
-  <link rel="stylesheet" href="/plugins/highlight/styles/dracula.css">
-  <!-- highlight.js代码高亮主题 css 引入-->
+    .....省略代码.......
+    <!--prettify代码高亮主题css引入-->
+    <script src="/plugins/jquery-2.2.4.min.js"></script>
+    <link href="/plugins/prettify/atelier-forest-dark.min.css" rel="stylesheet">
+    .....省略代码.......
 </head>
 
 <body>
@@ -134,7 +135,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -216,7 +217,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-09-02T14:13:42.610Z" itemprop="dateUpdated">2017-09-02 22:13:42</time>
+    Last updated: <time datetime="2017-09-02T14:13:42.610Z" itemprop="dateUpdated">2017-09-02 22:13:42</time>
 </span><br>
 
 
@@ -294,21 +295,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="waves-block waves-effect prev">
-      <a href="/2017/09/03/http08/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">chapter 7 确保Web安全的HTTPS</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="waves-block waves-effect next">
-      <a href="/2017/08/05/http08-1/" id="post-next" class="post-nav-link">
+      <a href="/2017/08/22/http10/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">chapter 8 确认访问用户身份的认证</h4>
+        <h4 class="title">《图解http》笔记--10-Web的攻击技术</h4>
       </a>
     </div>
   
@@ -387,7 +381,7 @@
             
                 <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
             
-            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
         </p>
     </div>
     <div class="bottom">
@@ -451,11 +445,21 @@
 
 
 
+<!--prettify代码高亮脚本引入-->
+
+<script src="/plugins/prettify/prettify.js"></script>
+<script type="text/javascript">
+$(window).load(function(){
+$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+ prettyPrint();
+})
+</script>
+
     <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 <script>
-var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+var BLOG = { ROOT: '/', SHARE: 'true', REWARD: 'true' };
 
-
+//  
 </script>
 
 <script src="/js/main.min.js?v=1.6.13"></script>
@@ -509,10 +513,6 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
 
 
 
-<!-- highlight.js代码高亮主题 script 引入-->
-<script src="/plugins/highlight/highlight.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-<!-- highlight.js代码高亮主题 script 引入-->
 
 </body>
 </html>
